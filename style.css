@@ -1,0 +1,374 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Pattaya&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cookie', cursive;
+    font-family: 'Pattaya', sans-serif;
+}
+:root{
+    --main-color: #432303;
+    --box-color: #a16d0e;
+    --black:#333;
+    --white:#fff;
+    --font-family: 'Cookie', cursive;
+    --background: #020631;
+    --light-color:#666;
+    --border:.2rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rbga(0,0,0,.1);
+}
+.container-fluid{
+    background-color: #432303;
+}
+.container-fluid .navbar{
+    background-color: #432303;
+
+}
+
+.nav-item a{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-item a:hover{
+    color: #0000ff;
+    background-color: #713b06;
+    border-radius: 20px;
+
+}
+
+.nav-item .icons{
+    margin-left: 30px;
+}
+.nav-item .icons img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.nav-item .icons img:hover{
+    transform: translateY(-5px);
+   
+}
+
+.home {
+    height: 88vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-image: linear-gradient(#00000080,#00000080), url(images/background2.png);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+.home .image img{
+  width: 100%;
+  margin-top: 10%;
+}
+.home .content{
+   
+    margin-right: 60px;
+}
+.content h3{
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #8d3636;
+}
+.content h2{
+    font-size: 50px;
+    color: #ea0000;
+    text-shadow: 1px 1px 1px rgb(247, 241, 241);
+    font-weight: bold;
+}
+.content p{
+    color: white;
+}
+.changecontent::after{
+    content: ' ';
+    color: rgba(161,109,14,1);
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+}
+@keyframes changetext{
+    0%{content: "Birthday cake";}
+    20%{content: "Chocolate cake";}
+    50%{content: "Party cake";}
+    60%{content: "Slice cake";}
+    100%{content: "Cup cake";}
+}
+.content .btn{
+    width: 110px;
+    margin-top: 5%;
+    height: 38px;
+    margin-left: 10%;
+    background-color: #573818;
+    color: white;
+}
+.content .btn:hover{
+    color: #020631;
+    background-color: #e37100;
+    border: 1px solid #ff0000;
+}
+.about{
+ 
+   background:#3c1915;
+}
+.about .container p{
+    color: white;
+    margin-top: 15%;
+}
+.about .container button{
+    width: 110px;
+   border: 1px solid #ffa200;
+    height: 38px;
+    margin-left: 1%;
+    background-color: #573818;
+    color: white;
+
+}
+
+.layout h2{
+  font-size: 200%;
+  font-family: 'Pattaya', sans-serif;
+}
+.container-fluid img{
+    border-radius: 10%;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    cursor: pointer
+}
+.container-fluid img:hover{
+    transform: translateY(-10px);
+}
+.banner{
+    width: 100%;
+    height: 65vh;
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.6),rgba(0,0,0,0.6)), url(images/banner2.png);
+    background-size: cover;
+    
+}
+.banner h2{
+    color: #a16d0e;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000000;
+}
+.banner h3{
+    margin-top: 25%;
+    font-size: 50px;
+    color: #a16d0e;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000000;
+}
+.banner p{
+    color: #fff;
+}
+.banner button{
+    width: 100px;
+    margin-left: 10%;
+    height: 32px;
+    letter-spacing: 1px;
+    background-color: #a16d0e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card{
+    background-color: var(--box-color);
+}
+.Gallery {
+    background-color:var(--main-color);
+}
+.Gallery .container .card{
+    background-color:var(--box-color);
+    transition: 0.5s ease;
+    cursor: pointer
+   
+}
+.Gallery .container .card:hover{
+    transform: translateY(-10px);
+   
+}
+.Gallery .container .card-body{
+    background-color: #282831;
+}
+.Gallery .container .card-body p{
+    font-weight: normal;
+    color: #b55025;
+}
+.Gallery .container .card-body h6{
+   padding: 2%;
+   letter-spacing: 5px;
+}
+.Gallery .container .card-body h6 button{
+    width: 100px;
+    margin-left: 10%;
+    height: 32px;
+    letter-spacing: 1px;
+    background-color: #e55214;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.Gallery .container .card-body h6 button:hover{
+   background-color: #ff0000;
+   border: 1px solid #000000;
+ 
+}
+.Team{
+    background-color: #666;
+}
+
+.Flovers{
+    background-color: #573818;
+}
+
+
+.circle1{
+    height: 70px;
+    width: 200px;
+ 
+    color: blue;
+    border-radius: 50%;
+    padding: 20px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    opacity: 0;
+}
+.mix:hover .circle1{
+    transition: all 0.4s;
+    opacity: 1;
+}
+.circle1:hover{
+    
+    color:red;
+    transition: all 0.4s;
+}
+
+.Contact{
+  
+    background-image: linear-gradient(#501c1c80,#4f1d1d80), url(images/chocolate-cake-with-dried-fruit.jpg);
+    background-size: cover;
+
+}
+.Contact button{
+    width: 100px;
+    margin-left: 40%;
+    height: 32px;
+    background-color:var(--box-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.container-fluid  .icons a i{
+    background-color: white;
+    color: #573818;
+    border-radius: 50px;
+    margin-left: 1%;
+    padding: 5px;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    width: 30px;
+    height:30px;
+}
+.container-fluid  .icons a i:hover{
+    background-color: #2eff05;
+    color: #ffffff;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.01rem;
+  
+}
+.arrow{
+    position: fixed;
+    background-color: #a16d0e;
+    border-radius: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+@media screen and (max-width:420px){
+    .home{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+     .home .image img{
+        margin-top: 1%;
+             
+        }
+        .home .content{
+   
+           margin-left: 10%;
+        }
+        .contenth2{
+            margin-top: 1%;
+            font-size: 30px;
+        }
+    .content h3{
+        font-size: 30px;
+        margin-top: 30%;
+        
+    }
+    .content p{
+        font-size: 10px;
+    }
+    .banner{
+        height: auto;
+    }
+}
+
+@media screen and (max-width:600px){
+    .home{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+     .home .image img{
+        margin-top: 1%;
+             
+        }
+        .home .content{
+   
+           margin-left: 10%;
+        }
+        .contenth2{
+            margin-top: 1%;
+            font-size: 30px;
+        }
+    .content h3{
+        font-size: 30px;
+        margin-top: 30%;
+        
+    }
+    .content p{
+        font-size: 10px;
+    }
+    .banner{
+        height: auto;
+    }
+}
+
